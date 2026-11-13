@@ -124,3 +124,19 @@ details p { color: var(--text-2); margin: 10px 0 0; }
   .hero { padding-top: 40px; }
   section { padding: 40px 0; }
 }
+
+/* Release notes (changelog/ is generated from store/release-notes.md in the keel repo) */
+.tag { display: inline-block; vertical-align: middle; padding: 2px 8px; border-radius: var(--radius-xs); background: var(--surface-alt); border: 1px solid var(--border); color: var(--text-2); font-size: 12px; font-weight: 700; }
+.tag-pending { color: var(--muted); }
+.whats-new { margin: 20px auto 0; font-size: 14px; color: var(--text-2); }
+.whats-new a { font-weight: 700; margin-left: 4px; }
+.releases { padding-top: 48px; padding-bottom: 48px; max-width: 760px; }
+.releases h1 { font-size: 36px; margin: 0 0 24px; }
+.release { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; }
+.release + .release { margin-top: 16px; }
+.release h2 { font-size: 20px; margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.release-meta { color: var(--muted); font-size: 14px; margin: 4px 0 12px; }
+.release-headline { font-weight: 700; margin: 0 0 8px; }
+.release ul { margin: 0; padding-left: 20px; color: var(--text-2); }
+.release li + li { margin-top: 4px; }
+.empty { color: var(--text-2); }
