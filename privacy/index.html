@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keel privacy policy</title>
+<meta name="description" content="Keel keeps your job applications on your own device. It has no account, no server and no tracking.">
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+  [hidden] { display: none !important; }
+  :root {
+    --bg: #F5F7FB; --surface: #FFFFFF; --text: #0F1B2D; --text-2: #26344D; --muted: #5B6880;
+    --border: #E1E6F0; --accent: #0F1B2D;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0D1424; --surface: #131C2F; --text: #F1F4FA; --text-2: #C9D2E3; --muted: #93A0B8; --border: #24304A; --accent: #DCE6FF; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 20px; margin: 40px 0 8px; }
+  p, li { color: var(--text-2); }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+  .summary { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; }
+  .summary ul { margin: 0; padding-left: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--border); }
+  th { color: var(--text); }
+  table { table-layout: fixed; }
+  th:first-child, td:first-child { width: 36%; }
+  td:first-child { font-weight: 600; color: var(--text); overflow-wrap: anywhere; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Keel privacy policy</h1>
+  <p class="meta">Applies to the Keel Chrome extension, version 1.0.0 and later. Last updated 13 November 2026.</p>
+
+  <div class="summary">
+    <ul>
+      <li>Everything Keel saves stays in your browser, on your device.</li>
+      <li>Keel has no account and no server. It sends nothing anywhere: no analytics, no tracking, no ads.</li>
+      <li>Nobody else can see your data, including the people who make Keel.</li>
+    </ul>
+  </div>
+
+  <h2>What Keel saves</h2>
+  <p>Keel saves these only so it can show them back to you, and keeps them in your browser's own storage (IndexedDB and <code>chrome.storage</code>):</p>
+  <ul>
+    <li><strong>Applications:</strong> the company, job title, location, salary when the posting shows one, the job page's address, the job description text, the date you applied, the status and its history, interview dates and your notes. When an application moves from a job site to the company's own site, Keel briefly keeps that site's address so it can ask whether you finished applying.</li>
+    <li><strong>Résumés:</strong> when you attach a résumé to an application form, Keel keeps a copy of that file and its name so you can see which résumé you sent where. On LinkedIn Easy Apply it keeps only the file name.</li>
+    <li><strong>Saved answers:</strong> answers to application questions you chose to save, so Keel can fill them in next time. Keel never reads, saves or fills questions about identity numbers, passwords, payment details, date of birth, age, gender, race, religion, disability, veteran status or similar.</li>
+    <li><strong>Settings and activity:</strong> your choices in Settings, the sites you've turned Keel off on, and what you did about items in the Today plan (for example "followed up").</li>
+  </ul>
+
+  <h2>Gmail</h2>
+  <p>Gmail support is off until you turn it on and Chrome asks for access to <code>mail.google.com</code>. When it's on, Keel reads the email you have open on your screen, on your device, to spot replies about applications (an interview invite, a rejection, a confirmation). It doesn't sign in to your Google account, doesn't use the Gmail API and doesn't look through your inbox. It saves only what you agree to (for example a status change you clicked) and the ids of emails it has dealt with, so it doesn't ask twice. Email text is not stored.</p>
+
+  <h2>What Keel sends</h2>
+  <p>Nothing. Keel makes no network requests of its own. Your data leaves your device only when you export it to a file yourself.</p>
+
+  <h2>Permissions and why Keel needs them</h2>
+  <table>
+    <thead><tr><th>Permission</th><th>What it's used for</th></tr></thead>
+    <tbody>
+      <tr><td>Job sites (LinkedIn, Indeed, Greenhouse, Lever, Ashby, Workday, SmartRecruiters, Wellfound)</td><td>Notice when you apply on these sites and save the job.</td></tr>
+      <tr><td>All sites (optional)</td><td>Only if you turn it on: save applications on company careers sites. On each page Keel first checks whether it's a job page or an application form; on other pages it does nothing. You can turn Keel off on any site.</td></tr>
+      <tr><td>mail.google.com (optional)</td><td>Only if you turn it on: read the open email to offer status updates, as described above.</td></tr>
+      <tr><td>notifications (optional)</td><td>Only if you turn on interview reminders: a notification an hour before an interview or deadline.</td></tr>
+      <tr><td>storage, unlimitedStorage</td><td>Keep your applications, résumé copies and settings in your browser.</td></tr>
+      <tr><td>tabs</td><td>See the address of your tabs, to tell when an application continues on a company's own site and to set the toolbar icon for each tab.</td></tr>
+      <tr><td>activeTab, scripting</td><td>When you open Keel's popup on a job page, read that page's job details; run Keel's scripts on the sites above.</td></tr>
+      <tr><td>alarms</td><td>Check once a day for applications with no reply, and every few minutes for reminders.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Keeping and deleting your data</h2>
+  <p>Your data stays until you delete it. Settings → Data → Delete all data removes every application, résumé copy, saved answer and activity record. Removing Keel from Chrome deletes everything it saved. Export lets you save a copy to a file first.</p>
+
+  <h2>Sharing and selling</h2>
+  <p>Keel doesn't sell, share or transfer your data, and doesn't use it for advertising, credit decisions or anything other than showing it back to you.</p>
+
+  <h2>Changes</h2>
+  <p>If Keel ever starts saving or sending something new, this page will say so before that version ships, with the date at the top.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy: <a href="https://github.com/ankitsmt211" rel="noopener">github.com/ankitsmt211</a></p>
+</main>
+</body>
+</html>
