@@ -1,0 +1,16 @@
+# Cloudflare Pages headers.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'
+
+# File names aren't hashed, so no "immutable": a replaced file must refresh within the hour.
+# styles.css and site.js are linked with ?v=N; bump N when they change.
+/assets/*
+  Cache-Control: public, max-age=3600
+/*.css
+  Cache-Control: public, max-age=3600
+/*.js
+  Cache-Control: public, max-age=3600
