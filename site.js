@@ -1,7 +1,6 @@
-// Fills the store buttons. Set STORE_URL once the Chrome Web Store listing is live; until then the
-// page says "Coming soon". Phones and non-Chromium browsers can't install extensions, so they get
-// one plain line and a "Copy link" button instead of a store button.
-const STORE_URL = '';
+// Fills the store buttons from STORE_URL (empty shows "Coming soon"). Phones and non-Chromium
+// browsers can't install extensions, so they get one plain line and a "Copy link" button instead.
+const STORE_URL = 'https://chromewebstore.google.com/detail/odheogkffilbbohigmkfffpcnhdfobnd';
 
 function canInstall() {
   const ua = navigator.userAgent;
